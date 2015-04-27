@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Spy on Brant's Life
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > See what I've done, what I'm doing, where I'm going.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Intended to give strangers / friends / anyone a better insight into who I am via my writings / favorites / collections / activity throughout a given day. 
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Helps potential employers get to know me. Helps family/friends keep in touch.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > By using Instagram, Twitter, Facebook API's...get a status update of what I'm doing / where I am. Want to meet up? Just click on a link. It will send me a text. Read my blog posts / read my tweets. See my status. Using OpenMovie API, other personal interest API's (TBD). Show lists of my favorites, past projects, etc.
 
-## Quote from You ##
-  > A quote from a spokesperson in your company.
+## Quote from Johnny ##
+  > "Brant fired me because he said this project was all about his life." -Johnny
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Just visit the site and click around. 
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "When I visit Brant's new site, I feel like I'm deep down inside of his skull...riding on the synapses of his life." -Mike Yao
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Visit my site at www.brantchoate.com
