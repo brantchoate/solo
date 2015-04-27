@@ -6,3 +6,18 @@
 .x-ng-cloak {
   display: none !important;
 }
+body {
+  font-family: 'PT Serif', serif;
+}
+h3 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.recentTracks {
+  list-style-type: none;
+}
+.recentTracks li img {
+  float: left;
+  margin-right: 15px;
+}
