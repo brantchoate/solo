@@ -1,0 +1,23 @@
+{
+  "name": "brantchoate.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/brantchoate/2015-03-solo",
+  "authors": [
+    "brantchoate <brantchoate@gmail.com>"
+  ],
+  "description": "The new site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "path": "vendor"
+  },
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}
