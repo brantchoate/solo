@@ -9,6 +9,13 @@ module.exports = function(grunt) {
           "css/main.css": "css/main.less"
         }
       },
+    },
+    watch: {
+      options: {
+        livereload: true,
+      },
+      files: ['css/*.less'],
+      tasks: ['less']
     }
   });
 
@@ -17,9 +24,9 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('grunt-contrib-concat');
   //grunt.loadNpmTasks('grunt-contrib-uglify');
   //grunt.loadNpmTasks('grunt-contrib-jshint');
-  //grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['less']);
+  grunt.registerTask('default', ['less', 'watch']);
 
 };
