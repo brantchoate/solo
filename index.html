@@ -6,7 +6,9 @@
     <link href='http://fonts.googleapis.com/css?family=Lato|PT+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body ng-app="brantApp" ng-cloak>
+<body ng-app="brantApp" ng-controller="mainCtrl" ng-cloak>
+<h1>This is pretty much all the crap I did while making this project</h1>
+<!-- <h1>Listened to these Artists</h1>
 <div ng-controller="weeklyArtist">
     <ul class="weeklyArtist">
         <li ng-repeat="a in artists">
@@ -14,19 +16,39 @@
         </li>
     </ul>
 </div>
+<h1>These Songs</h1>
 <div ng-controller="recentTracks">
     <ul class="recentTracks">
         <li ng-repeat="t in recentTracks">
-            <img ng-src="{{t.image[2]['#text']}}">
+            <img ng-src="{{t.image[1]['#text']}}">
             <h3>{{t.artist['#text']}} {{t['@attr'].nowplaying}}</h3>
             <p>{{t.name}}</p>
             <p>{{t.album['#text']}}</p>
         </li>
     </ul>
 </div>
+<h1>Went to these places</h1>
+<div ng-controller="checkins">
+    <ul class="checkins">
+        <li ng-repeat="c in checkins">{{c.createdAt | time}} - {{c.venue.name}} - {{c.exactContextLine}} {{c.shout}}</li>
+    </ul>
+    <ui-gmap-google-map center='map.center' zoom='map.zoom' options='mapOpts' bounds="map.bounds">
+        <ui-gmap-markers models="markers" coords="'self'" icon="'icon'">
+                </ui-gmap-markers>
+    </ui-gmap-google-map>
+</div> -->
+<h1>Did this crap on my computer</h1>
+<div ng-controller="computerTime">
+    <ul class="computerTime">
+        <li ng-repeat="ct in computerTime">{{ct}}</li>
+    </ul>
+</div>
+<script src="vendor/moment/moment.js"></script>
 <script src="vendor/angular/angular.js"></script>
 <script src="vendor/d3/d3.js"></script>
 <script src="vendor/velocity/velocity.js"></script>
+<script src="vendor/lodash/lodash.compat.js"></script>
+<script src="vendor/angular-google-maps/angular-google-maps.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -9,8 +9,15 @@
 body {
   font-family: 'PT Serif', serif;
 }
-h3 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Lato', sans-serif;
+}
+h3 {
   text-transform: uppercase;
   font-size: 30px;
 }
@@ -20,4 +27,7 @@ h3 {
 .recentTracks li img {
   float: left;
   margin-right: 15px;
+}
+.angular-google-map-container {
+  height: 400px;
 }
