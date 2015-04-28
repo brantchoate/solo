@@ -69,6 +69,13 @@ angular.module('brantApp',['uiGmapgoogle-maps'])
         $scope.instaPics = data.data;
     });
 }])
+.controller('githubCommits', ['$scope','$http', function ($scope, $http) {
+    $http.get('https://api.github.com/repos/brantchoate/solo/commits')
+    .success(function(data){
+        console.log(data);
+        $scope.commits = data;
+    });
+}])
 .filter('time', function(){
     return function(input){
         return moment.unix(input).format('MMMM Do YYYY, h:mm:ss a');
