@@ -63,6 +63,12 @@ angular.module('brantApp',['uiGmapgoogle-maps'])
         $scope.computerTime;
     });
 }])
+.controller('instaPics', ['$scope','$http', function ($scope, $http) {
+    $http.get('data/insta.json')
+    .success(function(data){
+        $scope.instaPics = data.data;
+    });
+}])
 .filter('time', function(){
     return function(input){
         return moment.unix(input).format('MMMM Do YYYY, h:mm:ss a');

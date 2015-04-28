@@ -43,6 +43,12 @@
         <li ng-repeat="ct in computerTime">{{ct}}</li>
     </ul>
 </div>
+<h1>InstaPics</h1>
+<div ng-controller="instaPics">
+    <ul class="instaPics">
+        <li ng-repeat="p in instaPics"><img ng-src="{{p.images.low_resolution.url}}" alt=""></li>
+    </ul>
+</div>
 <script src="vendor/moment/moment.js"></script>
 <script src="vendor/angular/angular.js"></script>
 <script src="vendor/d3/d3.js"></script>
