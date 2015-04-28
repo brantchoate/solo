@@ -12,9 +12,10 @@ angular.module('brantApp',['uiGmapgoogle-maps'])
     console.log($location.hash());
 }])
 .controller('weeklyArtist', ['$scope','$http', function ($scope, $http) {
-  $http.get('http://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=garnett3&api_key=24868f1c604879f7481eb08683dda7e5&format=json')
+  $http.get('http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=garnett3&api_key=24868f1c604879f7481eb08683dda7e5&format=json&period=7day&limit=7')
   .success(function(data){
-    $scope.artists = data.weeklyartistchart.artist;
+    console.log(data);
+    $scope.artists = data.topartists.artist;
   });
 }])
 .controller('recentTracks', ['$scope','$http', function ($scope, $http) {
@@ -59,8 +60,7 @@ angular.module('brantApp',['uiGmapgoogle-maps'])
 .controller('computerTime', ['$scope', '$http', function ($scope, $http) {
     $http.get('data/rescuetime.json')
     .success(function(data){
-        console.log(data);
-        $scope.computerTime;
+        $scope.computerTime = data;
     });
 }])
 .controller('instaPics', ['$scope','$http', function ($scope, $http) {
