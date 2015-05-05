@@ -20,7 +20,7 @@
       <div ng-controller="weeklyArtist">
         <ul class="weeklyArtist">
           <li ng-repeat="a in artists">
-            {{a.name}} - {{a.playcount}}
+            <span>{{a.name}} ({{a.playcount}} times)</span>
           </li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
     </div>
     </div>
   </div>
-<!--   <div class="row"> 
+  <div class="row"> 
     <h2>Went to these places</h2>
     <div ng-controller="checkins">
       <div class="one-half column">
@@ -58,8 +58,8 @@
         </ui-gmap-google-map>
       </div>     
     </div>
-  </div> -->
-<!--   <div class="row">
+  </div>
+  <div class="row">
     <div class="one-half column">
       <h2>Did this crap on my computer</h2>
       <div ng-controller="computerTime">
@@ -73,8 +73,8 @@
         </ul>
       </div>
     </div>
-  </div> -->
-<!--   <div class="row">
+  </div>
+  <div class="row">
     <h2>Coded up this crap</h2>
     <div ng-controller="githubCommits">
       <ul class="commits">
@@ -83,15 +83,15 @@
           </li>
       </ul>
     </div>
-  </div> -->
-<!--   <div class="row">
+  </div>
+  <div class="row">
     <h2>Took some of these Pics</h2>
     <div ng-controller="instaPics">
       <ul class="instaPics">
         <li ng-repeat="p in instaPics"><img ng-src="{{p.images.low_resolution.url}}" alt=""></li>
       </ul>
     </div>
-  </div> -->
+  </div>
 
 <script src="vendor/moment/moment.js"></script>
 <script src="vendor/angular/angular.js"></script>
@@ -99,6 +99,7 @@
 <script src="vendor/velocity/velocity.js"></script>
 <script src="vendor/lodash/lodash.compat.js"></script>
 <script src="vendor/angular-google-maps/angular-google-maps.js"></script>
+<script src="js/barchart.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

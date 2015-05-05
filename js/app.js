@@ -9,7 +9,7 @@ angular.module('brantApp',['uiGmapgoogle-maps'])
     });
 }])
 .controller('mainCtrl', ['$scope','$location', function ($scope, $location) {
-    console.log($location.hash());
+    ///TODO SCAFFOLD OUT DATA BETTER
 }])
 .controller('weeklyArtist', ['$scope','$http', function ($scope, $http) {
   $http.get('http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=garnett3&api_key=24868f1c604879f7481eb08683dda7e5&format=json&period=7day&limit=7')
@@ -54,8 +54,6 @@ angular.module('brantApp',['uiGmapgoogle-maps'])
     $scope.mapOpts = {
         scrollwheel: false
     };
-
-
 }])
 .controller('computerTime', ['$scope', '$http', function ($scope, $http) {
     $http.get('data/rescuetime.json')

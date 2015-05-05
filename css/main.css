@@ -64,6 +64,12 @@ h3 {
   margin-right: 15px;
   margin-bottom: 15px;
 }
+.weeklyArtist {
+  list-style-type: none;
+}
+.weeklyArtist li {
+  font-size: 34px;
+}
 .checkins {
   list-style-type: none;
 }
